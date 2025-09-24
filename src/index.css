@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    /* Material Design 3 Light Theme - Deep Teal */
+    --primary: 175 70% 38%;
+    --on-primary: 0 0% 100%;
+    --primary-container: 175 75% 90%;
+    --on-primary-container: 175 100% 15%;
+    --secondary: 210 15% 45%;
+    --on-secondary: 0 0% 100%;
+    --secondary-container: 210 25% 90%;
+    --on-secondary-container: 210 20% 20%;
+    --tertiary: 30 50% 50%;
+    --on-tertiary: 0 0% 100%;
+    --tertiary-container: 30 60% 92%;
+    --on-tertiary-container: 30 70% 20%;
+    --error: 0 70% 54%;
+    --on-error: 0 0% 100%;
+    --error-container: 0 100% 93%;
+    --on-error-container: 0 60% 24%;
+    --background: 210 20% 98%;
+    --on-background: 210 13% 11%;
+    --surface: 210 20% 98%;
+    --on-surface: 210 13% 11%;
+    --surface-variant: 210 18% 89%;
+    --on-surface-variant: 210 11% 28%;
+    --outline: 210 11% 48%;
+    --outline-variant: 210 16% 81%;
+    --surface-dim: 210 13% 86%;
+    --surface-bright: 210 20% 98%;
+    --surface-container-lowest: 0 0% 100%;
+    --surface-container-low: 210 17% 96%;
+    --surface-container: 210 22% 94%;
+    --surface-container-high: 210 20% 92%;
+    --surface-container-highest: 210 16% 89%;
+    /* Shadcn UI compatibility */
+    --foreground: var(--on-background);
+    --border: var(--outline);
+    --input: var(--surface-container-high);
+    --ring: var(--primary);
+    --radius: 0.5rem;
+  }
+  .dark {
+    /* Material Design 3 Dark Theme - Deep Teal */
+    --primary: 175 70% 75%;
+    --on-primary: 175 100% 12%;
+    --primary-container: 175 70% 38%;
+    --on-primary-container: 175 75% 90%;
+    --secondary: 210 18% 80%;
+    --on-secondary: 210 20% 15%;
+    --secondary-container: 210 15% 45%;
+    --on-secondary-container: 210 25% 90%;
+    --tertiary: 30 55% 80%;
+    --on-tertiary: 30 70% 18%;
+    --tertiary-container: 30 50% 50%;
+    --on-tertiary-container: 30 60% 92%;
+    --error: 0 100% 81%;
+    --on-error: 0 55% 19%;
+    --error-container: 0 70% 54%;
+    --on-error-container: 0 100% 93%;
+    --background: 210 13% 8%;
+    --on-background: 210 16% 89%;
+    --surface: 210 13% 8%;
+    --on-surface: 210 16% 89%;
+    --surface-variant: 210 11% 28%;
+    --on-surface-variant: 210 16% 81%;
+    --outline: 210 11% 48%;
+    --outline-variant: 210 11% 28%;
+    --surface-dim: 210 13% 8%;
+    --surface-bright: 210 13% 22%;
+    --surface-container-lowest: 210 13% 3%;
+    --surface-container-low: 210 13% 11%;
+    --surface-container: 210 12% 13%;
+    --surface-container-high: 210 12% 18%;
+    --surface-container-highest: 210 13% 22%;
+  }
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    text-rendering: optimizeLegibility;
+  }
+}
