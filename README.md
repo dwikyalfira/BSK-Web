@@ -1,6 +1,6 @@
 # Aether Travel
 
-[cloudflarebutton]
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/dwikyalfira/BSK-Web)
 
 A visually stunning, minimalist website for a luxury travel company, showcasing curated destinations and facilitating inquiries.
 
@@ -90,7 +90,7 @@ This project is configured for seamless deployment to Cloudflare Pages.
 
 Alternatively, you can deploy directly from your GitHub repository with a single click.
 
-[cloudflarebutton]
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/dwikyalfira/BSK-Web)
 
 ## 📂 Project Structure
 
